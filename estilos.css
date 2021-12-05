@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Oxygen:wght@300&family=Rubik:ital@1&display=swap');
 /* tragio fuente, es mejor importar y dejar en estilos */
 
@@ -189,3 +190,196 @@ nav ul li:hover{
     border-radius: 10px;
 }
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Oxygen:wght@300&family=Rubik:ital@1&display=swap');
+/* tragio fuente, es mejor importar y dejar en estilos */
+
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* centro todo los textos de la caja principal */    
+}
+
+#plantilla{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "header header header" /* 100px */
+        "subMenu producto publicidad" /* 2fr */
+        "SubMenu servicios publicidad" /* 3fr */
+        "footer footer footer"; /* 170px */
+        /* 20%  auto 300px  */
+    grid-template-rows: 1fr 7fr 3fr 150px;
+    grid-template-columns: 0.4fr 3fr 0.3fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(7,27,51);
+    padding: 10px;
+    font-family: Oxygen;
+}
+.menu__lista{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu__lista__item{
+    display: inline;
+    padding:10px 10px;
+    border-radius: 15px;
+    background-color: rgb(7,27,51);
+}
+
+.menu__lista__item:hover{
+    background-color: tomato;
+}
+
+.menu__img{
+    width: 100px;
+    height: 100px;
+}
+
+.menu__item{
+    list-style: none;
+}
+.menu__lista__item a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+header{
+    grid-area: header;
+    /* background-color: tomato; */
+}
+
+footer{
+    display: flex;
+    justify-content: space-between; /* Horizontal */
+    align-items: center; /* vertical */
+    grid-area: footer;
+    background-color: beige;
+}
+footer h2{
+    justify-self: center;
+    align-self: center;
+}
+
+nav ul{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+
+nav ul li:hover{
+    background-color: tomato;
+}
+#servicios{
+    background-color: aqua;
+    grid-area: servicios;
+}
+#productos{
+    grid-area: producto;
+    background-color: rgb(216, 211, 199);
+}
+
+.productos__fondo{
+    background-image: url(../img/adrien-vajas-o3_3a_EyNnY-unsplash4.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-size: cover, para que se adapte al contenido de la pantalla */ 
+}
+
+#subMenu{
+    background-color: rgb(7, 27, 51);
+    grid-area: subMenu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+
+.publicidad{
+    grid-area: publicidad;
+    background-color: grey;
+    background-image: url(https://images.unsplash.com/photo-1531502774286-5e4e8e94879f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmlrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+}
+
+
+}
+
+.border-items{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.forma{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: space-evenly; */
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.forma__cubo{
+    border-style: solid;
+    border-radius: 10%;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+}
+
+.footer__card{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+
+.productos__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    padding: 15px;
+}
+
+.productos__contenedor__card{
+    width: 200px;
+    height: 250px;
+    background-color: #FCF5EA;
+    background-color: rgb(223, 223, 223);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.productos__contenedor__card__image{
+    width: 180px;
+    height: 230px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+>>>>>>> main
