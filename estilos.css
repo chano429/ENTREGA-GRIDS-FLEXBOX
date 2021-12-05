@@ -15,10 +15,10 @@ body{
     grid-template-areas:
         "header header header" /* 100px */
         "subMenu producto publicidad" /* 2fr */
-        "SubMenu servicios publicidad" /* 3fr */
+        /* "SubMenu servicios publicidad" 3fr */
         "footer footer footer"; /* 170px */
         /* 20%  auto 300px  */
-    grid-template-rows: 1fr 7fr 3fr 150px;
+    grid-template-rows: 1fr 7fr 150px;
     grid-template-columns: 0.4fr 3fr 0.3fr;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
@@ -67,7 +67,7 @@ header{
 
 footer{
     display: flex;
-    justify-content: space-between; /* Horizontal */
+    justify-content: center; /* Horizontal */
     align-items: center; /* vertical */
     grid-area: footer;
     background-color: beige;
@@ -165,8 +165,10 @@ nav ul li:hover{
 .productos__contenedor{
     display: flex;
     flex-wrap: wrap;
-    overflow: scroll;
-    padding: 15px;
+    /* overflow: scroll; */
+    padding:100px;
+    justify-content: center;
+    
 }
 
 .productos__contenedor__card{
@@ -178,6 +180,7 @@ nav ul li:hover{
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 15px;
+    border-style: solid;
 }
 
 .productos__contenedor__card__image{
