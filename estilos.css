@@ -18,8 +18,8 @@ body{
         "SubMenu servicios publicidad" /* 3fr */
         "footer footer footer"; /* 170px */
         /* 20%  auto 300px  */
-    grid-template-rows: 1fr auto 3fr 150px;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 7fr 3fr 150px;
+    grid-template-columns: 0.4fr 3fr 0.3fr;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 }
@@ -70,8 +70,7 @@ footer{
     justify-content: space-between; /* Horizontal */
     align-items: center; /* vertical */
     grid-area: footer;
-    background-color: #d4ff16;
-    
+    background-color: beige;
 }
 footer h2{
     justify-self: center;
@@ -99,16 +98,24 @@ nav ul li:hover{
 }
 #productos{
     grid-area: producto;
-    background-color: darkgoldenrod;
+    background-color: rgb(216, 211, 199);
+}
+
+.productos__fondo{
+    background-image: url(../img/adrien-vajas-o3_3a_EyNnY-unsplash4.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-size: cover, para que se adapte al contenido de la pantalla */ 
 }
 
 #subMenu{
-    background-color: rgb(139, 170, 170);
+    background-color: rgb(7, 27, 51);
     grid-area: subMenu;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
+    flex-direction: column;
 }
 
 .publicidad{
@@ -144,3 +151,41 @@ nav ul li:hover{
     background-color: tomato;
     margin: 10px;
 }
+
+.footer__card{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+
+.productos__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    padding: 15px;
+}
+
+.productos__contenedor__card{
+    width: 200px;
+    height: 250px;
+    background-color: #FCF5EA;
+    background-color: rgb(223, 223, 223);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.productos__contenedor__card__image{
+    width: 180px;
+    height: 230px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
